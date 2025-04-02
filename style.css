@@ -52,3 +52,35 @@ button:hover {
 .export-links {
     margin-top: 20px; /* Espaçamento acima dos links de exportação */
 }
+s
+.export-buttons {
+    margin-top: 20px; /* Espaçamento acima dos botões */
+}
+
+.btn-export {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.btn-export.excel {
+    background-color: #007bff; /* Verde para Excel */
+}
+
+.btn-export.excel:hover {
+    background-color: #0056b3; /* Verde mais escuro ao passar o mouse */
+}
+
+.btn-export.json {
+    background-color: #007bff; /* Azul para JSON */
+}
+
+.btn-export.json:hover {
+    background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+}

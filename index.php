@@ -29,7 +29,7 @@
                     placeholder="Digite o CPF" 
                     pattern="\d{11}" 
                     title="O CPF deve conter 11 números." 
-                    oninvalid="this.setCustomValidity('O CPF deve conter exatamente 11 números.')" 
+                    oninvalid="this.setCustomValidity('O CPF deve conter 11 números.')" 
                     oninput="this.setCustomValidity('')" 
                     required>
             </div>
@@ -52,9 +52,13 @@
         </form>
 
         <h2>Exportar Dados</h2>
-        <div class="export-links">
-            <a href="export_xls.php">Exportar para Excel</a> |
-            <a href="export_json.php">Exportar para JSON</a>
+        <div class="export-buttons">
+            <form action="export_xls.php" method="GET" style="display: inline;">
+                <button type="submit" class="btn-export excel">Exportar para Excel</button>
+            </form>
+            <form action="export_json.php" method="GET" style="display: inline;">
+                <button type="submit" class="btn-export json">Exportar para JSON</button>
+            </form>
         </div>
     </div>
 </body>
